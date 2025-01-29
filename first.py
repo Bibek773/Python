@@ -54,8 +54,30 @@ a="string"
 # a=(input("Enter your name"))
 # print("Good morning "+ a)
 # #OR
-# print(f'hello {a} \n')
-l1=[1,2,3,4,'6']
+# # print(f'hello {a} \n')
+l1=[1,9,3,4,2]
 print(l1)
-print(l1[1])
-print(l1[:3])
+# print(l1[1])
+# print(l1[:3])
+# l1.sort()#list lai sort garera list mai save garxa
+# print(l1)
+# l2=l1#new list create gardaina l1 kai list ma point garxa
+# print(l1 is l2)
+# l2=l1.copy()#new list create garxa
+# print(l1 is l2)
+# print(l1.reverse())#reverse chai garxa tara return gardaina
+# print(l1)
+l1.append(9)
+print(l1)
+l1.insert(3,5)
+print(l1)
+l1[3]=78
+print(l1)
+l1.pop()#last element pop huxa
+print(l1)
+a=l1.pop()#poped value a ma store huxa
+print(a)
+l1.pop(2)#index 2 ko pop huxa
+print(l1)
+l1.remove(1)#value check garera if tyo value xa vane teslai remove garxa
+print(l1)
