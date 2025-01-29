@@ -28,7 +28,13 @@ print(a+b)"""
 a=int(input("enter a number"))
 b=int(input("enter no "))
 print(a+b)"""
+
 a="string"
-print(a[4])
-print(a[0:3])#0 1 2 index ko print hunxa
-print(a[3:])# last ko 3 index ko print hunxa
+# print(a[4])
+# print(a[0:3])#0 1 2 index ko print hunxa
+# print(a[3:])# last ko 3 index ko print hunxa
+# # print(a[::3])
+print(len(a))
+print(a.count('s'))
+print(a.capitalize())
+print(a[-1])# reverse order ma first index
