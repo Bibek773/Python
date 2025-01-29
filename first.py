@@ -20,6 +20,11 @@ print(str(a))
 print(int(a))
 print(float(a))
 """
+"""
 a=input("enter a number")
 b=input("enter no ")
+print(a+b)"""
+
+a=int(input("enter a number"))
+b=int(input("enter no "))
 print(a+b)
