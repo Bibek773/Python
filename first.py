@@ -1,9 +1,9 @@
 print('hello world')
-a=71
-print(a)
+#a=71
+#print(a)
 #a="bibek"
 #print(a)
-b=56
+#b=56
 """sum=a+b
 sub=a-b
 mul=a*b
@@ -12,9 +12,14 @@ print(sub)
 print(sum)
 print(mul)
 print(div)"""
-a=10;
+
+
+"""a=10;
 print(type(a))
 print(str(a))
 print(int(a))
 print(float(a))
-
+"""
+a=input("enter a number")
+b=input("enter no ")
+print(a+b)
