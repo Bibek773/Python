@@ -85,20 +85,33 @@ a="string"
 # a=(1,2,3,4)
 # print(type(a))
 # print(a)
-a=[]
-fruit1=input("Enter the first fruit")
-a.append(fruit1)
-fruit2=input("Enter the second fruit")
-a.append(fruit2)
-fruit3=input("Enter the third fruit")
-a.append(fruit3)
-print(a)
-b=[]
-m1=int(input("Enter the first mark"))
-b.append(m1)
-m2=int(input("Enter the second marks"))
-b.append(m2)
-m3=int(input("Enter the third marks"))
-b.append(m3)
-b.sort()
-print(b)
+# a=[]
+# fruit1=input("Enter the first fruit")
+# a.append(fruit1)
+# fruit2=input("Enter the second fruit")
+# a.append(fruit2)
+# fruit3=input("Enter the third fruit")
+# a.append(fruit3)
+# print(a)
+# b=[]
+# m1=int(input("Enter the first mark"))
+# b.append(m1)
+# m2=int(input("Enter the second marks"))
+# b.append(m2)
+# m3=int(input("Enter the third marks"))
+# b.append(m3)
+# b.sort()
+# print(b)
+a={
+    "name":"bibek",
+    "age": [20,34,35],
+      "roll":{
+          "a":100,
+          'b':12
+      }
+
+}# key vlaue
+print(a["roll"])
+print(a.keys())
+print(a.values())
+print(a['roll']['a'])
