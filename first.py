@@ -55,8 +55,8 @@ a="string"
 # print("Good morning "+ a)
 # #OR
 # # print(f'hello {a} \n')
-l1=[1,9,3,4,2]
-print(l1)
+# l1=[1,9,3,4,2]
+# print(l1)
 # print(l1[1])
 # print(l1[:3])
 # l1.sort()#list lai sort garera list mai save garxa
@@ -67,17 +67,38 @@ print(l1)
 # print(l1 is l2)
 # print(l1.reverse())#reverse chai garxa tara return gardaina
 # print(l1)
-l1.append(9)
-print(l1)
-l1.insert(3,5)
-print(l1)
-l1[3]=78
-print(l1)
-l1.pop()#last element pop huxa
-print(l1)
-a=l1.pop()#poped value a ma store huxa
+# l1.append(9)
+# print(l1)
+# l1.insert(3,5)
+# print(l1)
+# l1[3]=78
+# print(l1)
+# l1.pop()#last element pop huxa
+# print(l1)
+# a=l1.pop()#poped value a ma store huxa
+# print(a)
+# l1.pop(2)#index 2 ko pop huxa
+# print(l1)
+# l1.remove(1)#value check garera if tyo value xa vane teslai remove garxa
+# print(l1)
+# a=()#square bracket le list banauxa small  bracket le tupel banauxa... tupel ma insert remove garna mildaina
+# a=(1,2,3,4)
+# print(type(a))
+# print(a)
+a=[]
+fruit1=input("Enter the first fruit")
+a.append(fruit1)
+fruit2=input("Enter the second fruit")
+a.append(fruit2)
+fruit3=input("Enter the third fruit")
+a.append(fruit3)
 print(a)
-l1.pop(2)#index 2 ko pop huxa
-print(l1)
-l1.remove(1)#value check garera if tyo value xa vane teslai remove garxa
-print(l1)
+b=[]
+m1=int(input("Enter the first mark"))
+b.append(m1)
+m2=int(input("Enter the second marks"))
+b.append(m2)
+m3=int(input("Enter the third marks"))
+b.append(m3)
+b.sort()
+print(b)
