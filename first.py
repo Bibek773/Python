@@ -1,4 +1,4 @@
-print('hello world')
+# print('hello world')
 #a=71
 #print(a)
 #a="bibek"
@@ -46,7 +46,7 @@ a="string"
 # a="bibek \n \t \' \\"
 # print(a)
 
-# print("hello", end="")#by default last ma \n hunthyo end le khali string rakhi diyo 
+# print("hello", end="")#by default last ma \n hunthyo end le khali string rakhi diyo
 # print("world")
 # sum=int(6)+int(6)
 # print("your sum is :" + str(sum))
@@ -143,8 +143,47 @@ a="string"
 #     print(i)
 # for i in range(10):
 #     print(i)
-for i in range(11):
-    a=i%2
-    if a!=0:
-        continue
-    print(i)
+#even no
+# for i in range(11):
+#     a=i%2
+#     if a!=0:
+#         continue
+#     print(i)
+# for i, name in enumerate(["bibek", "shasanka", "oshan"]):
+#     print(f"{i}: {name}")
+# row=5
+# for i in range(row):
+#     for j in range(row-i):
+#         print("*\t", end=" ")
+    
+#     print()
+# #factorial
+# num=int(input("enter number "))
+# factorial=1
+# for i in range(1,num+1):
+#     factorial*=i
+# print(f"The factorial of {num} is {factorial}")
+#fibonacci
+# num= int(input("enter number "))
+# a,b=0,1
+# for i in range(num):
+#     print(a, end="")
+#     a,b=b, a+b
+## 512-----> 5+1+2
+# num= int(input("enter number "))
+# b=0
+# for i in range(num):
+#     a=int(num%10)
+#     b+=a
+#     num=int(num/10)
+# print(b)
+num= int(input("enter number "))
+nun=num
+b=0
+while(num>0):
+    a=int(num%10)
+    b=b*10+a
+    num=num//10
+print(b)
+if b==nun:
+    print(" palindrome")
