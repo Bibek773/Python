@@ -193,4 +193,13 @@ a="string"
 # b=int(input("enter a number"))
 # result = add(a, b)
 # print(result)
-
+def add(x,y, *args):
+    sum=0
+    print(args)
+    for num in args:
+        sum+=num
+    return sum
+result= add(1,2,3,4,5)
+print("Sum:", result)
+x,y, *unpack =[1,2,3,4,5,6]
+print(unpack)
