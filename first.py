@@ -115,26 +115,36 @@ a="string"
 # print(a.keys())
 # print(a.values())
 # print(a['roll']['a'])
-a={
-    "name":input("Enter your name: "),
-    "age":int(input("enter your age: ")),
-    "roll":int(input("Enter your rollno: ")),
-    "marks":{
-        "maths":int(input("enter your marks of maths: ")),
-        "English":int(input("enter your marks of English: ")),
-        "Science":int(input("enter your marks of maths: "))
-        }
-}
-print("\nName:",a["name"])
-print("Age",a["age"])
-print("Roll Number",a["roll"])
-print("\nMaths:",a["marks"]["maths"])
-print("Science:",a["marks"]["English"])
-print("English:",a["marks"]["Science"])
-total=a["marks"]["maths"]+a["marks"]["English"]+a["marks"]["Science"]
-print("\nTotal=",total)
-print(f"percentage={(total/3)}%")
-if (total/3)>40:
-    print("Pass ✔️")
-else:
-    print("Failed ❌")
+# a={
+#     "name":input("Enter your name: "),
+#     "age":int(input("enter your age: ")),
+#     "roll":int(input("Enter your rollno: ")),
+#     "marks":{
+#         "maths":int(input("enter your marks of maths: ")),
+#         "English":int(input("enter your marks of English: ")),
+#         "Science":int(input("enter your marks of Science: "))
+#         }
+# }
+# print("\nName:",a["name"])
+# print("Age",a["age"])
+# print("Roll Number",a["roll"])
+# print("\nMaths:",a["marks"]["maths"])
+# print("Science:",a["marks"]["English"])
+# print("English:",a["marks"]["Science"])
+# total=a["marks"]["maths"]+a["marks"]["English"]+a["marks"]["Science"]
+# print("\nTotal=",total)
+# print(f"percentage={(total/3)}%")
+# if (total/3)>40:
+#     print("Pass ✔️")
+# else:
+#     print("Failed ❌")
+# l1=[1,2,39]
+# for i in l1:
+#     print(i)
+# for i in range(10):
+#     print(i)
+for i in range(11):
+    a=i%2
+    if a!=0:
+        continue
+    print(i)
