@@ -177,13 +177,26 @@ a="string"
 #     b+=a
 #     num=int(num/10)
 # print(b)
-num= int(input("enter number "))
-nun=num
-b=0
-while(num>0):
-    a=int(num%10)
-    b=b*10+a
-    num=num//10
-print(b)
-if b==nun:
-    print(" palindrome")
+# num= int(input("enter number "))
+# nun=num
+# b=0
+# while(num>0):
+#     a=int(num%10)
+#     b=b*10+a
+#     num=num//10
+# print(b)
+# if b==nun:
+#     print(" palindrome")
+# def add (a, b):
+#     return a+b
+# a=int(input("enter a number"))
+# b=int(input("enter a number"))
+# result = add(a, b)
+# print(result)
+def abc(p, t, r=int(10)):
+              print(f"intrest is {(p*t*r)/100}")
+p =int(input("enter principle val"))
+t =int(input("enter time val"))
+r =int(input("enter rate val"))
+abc(p, t, r)
+abc(p, t)
