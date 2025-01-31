@@ -29,7 +29,7 @@ a=int(input("enter a number"))
 b=int(input("enter no "))
 print(a+b)"""
 
-a="string"
+#a="string"
 # print(a[4])
 # print(a[0:3])#0 1 2 index ko print hunxa
 # print(a[3:])# last ko 3 index ko print hunxa
@@ -193,13 +193,25 @@ a="string"
 # b=int(input("enter a number"))
 # result = add(a, b)
 # print(result)
-def add(x,y, *args):
+# def add(x,y, *args):
+#     sum=0
+#     print(args)
+#     for num in args:
+#         sum+=num
+#     return sum
+# result= add(1,2,3,4,5)
+# print("Sum:", result)
+# x,y, *unpack =[1,2,3,4,5,6]
+# print(unpack)
+def add(*args):
     sum=0
-    print(args)
     for num in args:
-        sum+=num
+        sum=sum + num
     return sum
-result= add(1,2,3,4,5)
-print("Sum:", result)
-x,y, *unpack =[1,2,3,4,5,6]
-print(unpack)
+a=[]
+b=int(input("Enter the No. of data: "))
+for i in range(b):
+    c=int(input(f"Enter the {i+1} th term"))
+    a.append(c)
+result=add(*a)
+print("sum:", result)
