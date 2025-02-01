@@ -392,7 +392,7 @@ print(a+b)"""
 # sum(a)
 # sum(a,b)
 # sum(a,b,c)
-def sum(*args):
+"""def sum(*args):
     result = 0
     for num in args:
         result += num
@@ -404,4 +404,7 @@ c = 3
 
 sum(a)       
 sum(a, b)    
-sum(a, b, c) 
+sum(a, b, c) """
+from functools import reduce
+add=lambda x,y:x+y
+print(add(7,8))
