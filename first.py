@@ -406,5 +406,13 @@ sum(a)
 sum(a, b)    
 sum(a, b, c) """
 from functools import reduce
-add=lambda x,y:x+y
-print(add(7,8))
+# add=lambda x,y:x+y
+# print(add(7,8))
+"""list ma vako each element ko square nikalera new list ma rakxa"""
+# number=[1,2,3,4,5]
+# squares=list(map(lambda x:x**2, number))
+# print(f"Squares: {squares}")\
+"""even number lai select garera new list ma add garxa"""
+# number=[1,2,3,4,5]
+# squares=list(filter(lambda x:x%2==0, number))
+# print(f"Squares: {squares}")
