@@ -312,6 +312,7 @@ try:
     print("Result:", result)
 except Exception as e:
     print(e)
-finally:
-    print("End")#finally chai program crash vaye pani run hunxa
-    
+else:#exception ma error aayena vane else ma aauxa 
+    print("no error")
+# finally:
+#     print("End")#finally chai program crash vaye pani run hunxa
