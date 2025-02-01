@@ -336,21 +336,38 @@ print(a+b)"""
 #         a.append(roll)
 #         print(f"{roll} has successfully added\n")
 """nested try"""
-def triangle(x,y,z):
-    try:
-        if ((x+y)<z) or ((x+y)<z) or ((x+y)<z):
-            raise ValueError("Given value doesn't satisfies triangle")
-    except:
-        raise
+# def triangle(x,y,z):
+#     try:
+#         if ((x+y)<z) or ((x+y)<z) or ((x+y)<z):
+#             raise ValueError("Given value doesn't satisfies triangle")
+#     except:
+#         raise
+#     else:
+#         print("this is a triangle")
+#     return 
+
+
+# try:
+#     a=int(input("Enter first side of triangle"))
+#     b=int(input("Enter second side of triangle"))
+#     c=int(input("Enter third side of triangle"))
+#     triangle(a,b,c)
+# except ValueError as e:
+#     print(e)
+
+"""recursive function"""
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n* factorial(n-1)
+# result= factorial(5)
+# print(f"Result:{result} ")
+"""sum of natural no"""
+def sum(n):
+    if n == 0:
+        return 0
     else:
-        print("this is a triangle")
-    return 
-
-
-try:
-    a=int(input("Enter first side of triangle"))
-    b=int(input("Enter second side of triangle"))
-    c=int(input("Enter third side of triangle"))
-    triangle(a,b,c)
-except ValueError as e:
-    print(e)
+        return n+ sum(n-1)
+result= sum(10)
+print(f"Result:{result} ")
