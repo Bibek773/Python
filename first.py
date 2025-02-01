@@ -364,10 +364,19 @@ print(a+b)"""
 # result= factorial(5)
 # print(f"Result:{result} ")
 """sum of natural no"""
-def sum(n):
-    if n == 0:
-        return 0
+# def sum(n):
+#     if n == 0:
+#         return 0
+#     else:
+#         return n+ sum(n-1)
+# result= sum(10)
+# print(f"Result:{result} ")
+"""fibonacci series"""
+def fibo(n):
+    if n<=1:
+        return n
     else:
-        return n+ sum(n-1)
-result= sum(10)
-print(f"Result:{result} ")
+        return fibo(n-1)+fibo(n-2)
+for i in range(10):
+    print(f"\t{fibo(i)}", end="")
+print()
