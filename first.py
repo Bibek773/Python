@@ -372,11 +372,36 @@ print(a+b)"""
 # result= sum(10)
 # print(f"Result:{result} ")
 """fibonacci series"""
-def fibo(n):
-    if n<=1:
-        return n
-    else:
-        return fibo(n-1)+fibo(n-2)
-for i in range(10):
-    print(f"\t{fibo(i)}", end="")
-print()
+# def fibo(n):
+#     if n<=1:
+#         return 
+#     else:
+#         return fibo(n-1)+fibo(n-2)
+# for i in range(10):
+#     print(f"\t{fibo(i)}", end="")
+# print()
+"""function over loading """
+
+# def sum(a:int, b=0, c=0):
+#     print(a+b+c)
+
+
+# a=1
+# b=2
+# c=3
+# sum(a)
+# sum(a,b)
+# sum(a,b,c)
+def sum(*args):
+    result = 0
+    for num in args:
+        result += num
+    print(result)
+
+a = 1
+b = 2
+c = 3
+
+sum(a)       
+sum(a, b)    
+sum(a, b, c) 
