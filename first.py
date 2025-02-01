@@ -322,3 +322,15 @@ print(a+b)"""
 #         raise ValueError("Number cannot be negative")#the raise statement is used to trigger exceptions manually
 # except ValueError as error:
 #     print(error)
+a=[]
+tot=5
+for i in range(tot):
+    roll=int(input("Enter roll no"))
+    try:
+        if roll in a:
+            raise ValueError("This roll number is already entered")
+    except ValueError as e:
+        print(e)
+    else:
+        a.append(roll)
+        print(f"{roll} has successfully added")
