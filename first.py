@@ -416,3 +416,7 @@ from functools import reduce
 # number=[1,2,3,4,5]
 # squares=list(filter(lambda x:x%2==0, number))
 # print(f"Squares: {squares}")
+"""list ma vako element ko sum """
+number=[1,2,3,4,5]
+sum=reduce(lambda x,y:x+y, number)
+print(f"Sum is {sum}")
