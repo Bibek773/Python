@@ -305,14 +305,20 @@ print(a+b)"""
 #     else:
 #         break
 """try and except"""
-try:
-    num1= int(input("Enter a number"))
-    num2= int(input("Enter a number"))
-    result=num1/num2
-    print("Result:", result)
-except Exception as e:
-    print(e)
-else:#exception ma error aayena vane else ma aauxa 
-    print("no error")
-# finally:
-#     print("End")#finally chai program crash vaye pani run hunxa
+# try:
+#     num1= int(input("Enter a number"))
+#     num2= int(input("Enter a number"))
+#     result=num1/num2
+#     print("Result:", result)
+# except Exception as e:
+#     print(e)
+# else:#exception ma error aayena vane else ma aauxa 
+#     print("no error")
+# # finally:
+# #     print("End")#finally chai program crash vaye pani run hunxa
+# try:
+#     num=int(input("enter any no"))
+#     if num<0:
+#         raise ValueError("Number cannot be negative")#the raise statement is used to trigger exceptions manually
+# except ValueError as error:
+#     print(error)
