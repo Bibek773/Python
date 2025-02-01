@@ -322,15 +322,35 @@ print(a+b)"""
 #         raise ValueError("Number cannot be negative")#the raise statement is used to trigger exceptions manually
 # except ValueError as error:
 #     print(error)
-a=[]
-tot=5
-for i in range(tot):
-    roll=int(input("Enter roll no"))
+""""""
+# a=[]
+# tot=5
+# for i in range(tot):
+#     roll=int(input("Enter roll no: "))
+#     try:
+#         if roll in a:
+#             raise ValueError("This roll number is already entered\n")
+#     except ValueError as e:
+#         print(e)
+#     else:
+#         a.append(roll)
+#         print(f"{roll} has successfully added\n")
+"""nested try"""
+def triangle(x,y,z):
     try:
-        if roll in a:
-            raise ValueError("This roll number is already entered")
-    except ValueError as e:
-        print(e)
+        if ((x+y)<z) or ((x+y)<z) or ((x+y)<z):
+            raise ValueError("Given value doesn't satisfies triangle")
+    except:
+        raise
     else:
-        a.append(roll)
-        print(f"{roll} has successfully added")
+        print("this is a triangle")
+    return 
+
+
+try:
+    a=int(input("Enter first side of triangle"))
+    b=int(input("Enter second side of triangle"))
+    c=int(input("Enter third side of triangle"))
+    triangle(a,b,c)
+except ValueError as e:
+    print(e)
