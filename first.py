@@ -305,11 +305,13 @@ print(a+b)"""
 #     else:
 #         break
 """try and except"""
-# try:
-#     num1= int(input("Enter a number"))
-#     num2= int(input("Enter a number"))
-#     result=num1/num2
-#     print("Result:", result)
-# except Exception as e:
-#     print(e)
+try:
+    num1= int(input("Enter a number"))
+    num2= int(input("Enter a number"))
+    result=num1/num2
+    print("Result:", result)
+except Exception as e:
+    print(e)
+finally:
+    print("End")#finally chai program crash vaye pani run hunxa
     
