@@ -405,7 +405,7 @@ c = 3
 sum(a)       
 sum(a, b)    
 sum(a, b, c) """
-from functools import reduce
+#from functools import reduce
 # add=lambda x,y:x+y
 # print(add(7,8))
 """list ma vako each element ko square nikalera new list ma rakxa"""
@@ -417,6 +417,15 @@ from functools import reduce
 # squares=list(filter(lambda x:x%2==0, number))
 # print(f"Squares: {squares}")
 """list ma vako element ko sum """
-number=[1,2,3,4,5]
-sum=reduce(lambda x,y:x+y, number)
-print(f"Sum is {sum}")
+# number=[1,2,3,4,5]
+# sum=reduce(lambda x,y:x+y, number)
+# print(f"Sum is {sum}")  
+"""file haldeling"""
+file=open("example.txt","w")
+file.write("hello world")
+file.close()
+
+file= open("example.txt","r")
+content= file.read()
+print(content)
+file.close()
