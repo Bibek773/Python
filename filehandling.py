@@ -30,9 +30,11 @@ def search():
     for i in range(count):
         if a == student[i]["ROLL"]:
             print(student[i]["name"])
+            return
+    print("Rollno you have entered is not found")
 
 def update():
-    w = int(input("Enter the roll no. you have incorrectly entered: "))
+    w = int(input("Enter the roll no. you have incorrectly entered wrong information: "))
     for i in range(count):
         if w == student[i]["ROLL"]:
             while True:
