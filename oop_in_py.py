@@ -127,13 +127,13 @@
 # print(a)
 """list comprehension in Python in inheritance"""
 class Root:
-    fx='root'
+    f='root'
 class A(Root):
     fx='A'
 class B(Root):
     fx='B'
-class C(Root):
+class C(A,B):
     fx='C'
 c=C()
-print(c.fx)
+print(c.f)
 print([cls for cls in C.__mro__])
