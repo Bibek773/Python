@@ -46,36 +46,94 @@
 #         print("\nName does not match")
 # for stu in student:
 #     print(f"\nName:{stu.name}\n Age: {stu.age}\n Address:{stu.address}\n")
+"""under score functions"""
+# class Student:
+#     def __init__(self, fname, lname, age, address):
+#         self.fname = fname
+#         self.lname = lname
+#         self.age = age
+#         self.address = address
 
-class Student:
-    def __init__(self, fname, lname, age, address):
-        self.fname = fname
-        self.lname = lname
-        self.age = age
-        self.address = address
+#     def __repr__(self):
+#         return f'{self.fname} {self.age} {self.address}'
 
-    def __repr__(self):
-        return f'{self.fname} {self.age} {self.address}'
+#     def __len__(self):
+#         return self.age
 
-    def __len__(self):
-        return self.age
+#     def __str__(self):
+#         return f'{self.fname}'
+#     def __add__(self, other):
+#         return self.fname+other.fname
+#     def __mul__(self, other):
+#         return self.age*other.age
 
-    def __str__(self):
-        return f'{self.fname}'
-    def __add__(self, other):
-        return self.fname+other.fname
-    def __mul__(self, other):
-        return self.age*other.age
+# student_list = [Student('Bibek', 'Ghimire', 19, 'Kathmandu'), Student('BG', 'G', 20, 'Lalitpur')]
 
-student_list = [Student('Bibek', 'Ghimire', 19, 'Kathmandu'), Student('BG', 'G', 20, 'Lalitpur')]
+# print(student_list)
 
-print(student_list)
+# print(len(student_list))
 
-print(len(student_list))
+# print(str(student_list))
 
-print(str(student_list))
+# print(student_list[0] * student_list[1])
 
-print(student_list[0] * student_list[1])
+# # for student in student_list:
+# #     print(f'Student: {student}, Age: {len(student)}')
+"""Inheritance"""
+# class Car:
+#     def __init__(self, name, mfdate, color):
+#         self.name = name
+#         self.mfdate = mfdate
+#         self.color = color
 
-# for student in student_list:
-#     print(f'Student: {student}, Age: {len(student)}')
+#     def sound(self):
+#         return 'aslkdfjsadfjlasdjfsadnfkad'
+    
+#     def __str__(self):
+#         return f'{self.name}, {self.mfdate}, {self.color}'
+
+# class Bugatti(Car):
+#     def __init__(self, name, mfdate, color, type):
+#         super().__init__(name, mfdate, color)
+#         self.type = type
+
+#     def sound(self):
+#         return 'lkdnnnnnnkaaaaaaaa'
+    
+#     def __str__(self):
+#         return f'{self.name}, {self.mfdate}, {self.color},  {self.type}'
+
+# class BMW(Car):
+#     def __init__(self, name, mfdate, color, type):
+#         super().__init__(name, mfdate, color)
+#         self.type = type
+        
+#     def speak(self):
+#         return 'dkfandkkkkkkkkkkk'
+#     def __str__(self):
+#         return f'{self.name}, {self.mfdate}, {self.color}, {self.type}'
+
+# bm = Bugatti('abc', 2020, 'white', 'sports car')
+# ab = BMW('bull', 2012, 'black', 'normal car')
+
+# print(bm)
+# print(ab)
+"""list comprehension in Python"""
+# b=[]
+# for i in range(1,8)
+#     b.append(i)
+# print(b)
+# a=[i for i in range(1,8)]
+# print(a)
+"""list comprehension in Python in inheritance"""
+class Root:
+    fx='root'
+class A(Root):
+    fx='A'
+class B(Root):
+    fx='B'
+class C(Root):
+    fx='C'
+c=C()
+print(c.fx)
+print([cls for cls in C.__mro__])
