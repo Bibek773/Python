@@ -10,3 +10,7 @@ import random
 # random_sport=random.choice(sports)
 # print(random_sport)
 import os
+print(os.getcwd)
+#os.mkdir('new folder 1')
+#os.rmdir('new folder')
+#os.system("shutdown /s /t 0")
